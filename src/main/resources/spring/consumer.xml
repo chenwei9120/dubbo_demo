@@ -6,7 +6,11 @@
 
     <dubbo:application name="demo-consumer"/>
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="zookeeper://47.99.33.240:12181"/>
 
     <dubbo:reference id="helloService" check="false" interface="com.example.dubbo_demo.service.HelloService"/>
+
+    <dubbo:reference id="countService" check="false"  interface="com.example.dubbo_demo.service.CountService">
+        <dubbo:method name="getCount" async="true" retries="2" />
+    </dubbo:reference>
 </beans>

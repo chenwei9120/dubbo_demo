@@ -1,0 +1,4 @@
+canonPrinter=com.example.dubbo_demo.spi.print.CanonPrinter
+hpPrinter=com.example.dubbo_demo.spi.print.HPPrinter
+com.example.dubbo_demo.spi.print.PrinterLogWrapper
+com.example.dubbo_demo.spi.print.PrinterCheck

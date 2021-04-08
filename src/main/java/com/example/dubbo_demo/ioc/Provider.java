@@ -1,4 +1,4 @@
-package com.example.dubbo_demo;
+package com.example.dubbo_demo.ioc;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

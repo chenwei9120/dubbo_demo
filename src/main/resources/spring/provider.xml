@@ -6,11 +6,15 @@
 
     <dubbo:application name="demo-provider"/>
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="zookeeper://47.99.33.240:12181"/>
 
-    <dubbo:protocol name="dubbo" port="20890"/>
+    <dubbo:protocol name="dubbo" port="-1"/>
 
     <bean id="helloService" class="com.example.dubbo_demo.service.impl.HelloServiceImpl" />
 
     <dubbo:service interface="com.example.dubbo_demo.service.HelloService" ref="helloService"/>
+
+    <bean id="countService"  class="com.example.dubbo_demo.service.impl.CountServiceImpl"  />
+
+    <dubbo:service interface="com.example.dubbo_demo.service.CountService" ref="countService" />
 </beans>

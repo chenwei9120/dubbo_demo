@@ -1,0 +1,2 @@
+wrapper=com.example.dubbo_demo.spi.aop.HelloServiceWrapper
+helloServiceImpl = com.example.dubbo_demo.spi.aop.HelloServiceImpl
